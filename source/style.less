@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow: hidden;
+}
+
+a { 
+    text-decoration: none; 
+} 
+
+li {
+	list-style-type: none;
+}
+
+.left-side {
+	width: 15%;
+	background-color: #f7eded;
+}
+
+.wrapper {
+	display: flex;
+    height: 100%;	
+}
+
+.right-side {
+	width: 85%;
+}
+
+.link {
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #9893e247;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media (max-width: 890px) {
+
+    .right-side {
+        display: none;
+    }
+}

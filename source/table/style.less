@@ -1,0 +1,66 @@
+.table-header {
+    display: flex;
+    justify-content: space-between;
+
+    &__column {
+        display: flex;
+        padding: 10px;
+        width: 25%;
+        border-right: 1px solid black;
+        color: white;
+        background-color: #00bcd473;
+        cursor: pointer;
+
+        &.without-cursor {
+            cursor: default;
+        }
+    }
+}
+
+.table-rows {
+    display: flex;
+    justify-content: space-between;
+
+    .table__row {
+        min-height: 65px;
+        padding: 10px;
+        width: 25%;
+        border-right: 1px solid black;
+
+    }
+
+    .blue {
+        color: blue;
+    }
+
+    .red {
+        color: red;
+    }
+
+    .green {
+        color: green;
+    }
+
+    &:last-of-type {
+        border-bottom: 1px solid black;
+    }
+}
+
+.arrow-down {
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black;
+    border-image: initial;
+    margin-left: 5px;
+    margin-bottom: 23px;
+}
+
+.arrow-upp {
+    transform: rotate(180deg);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black;
+    border-image: initial;
+    margin-left: 5px;
+    margin-top: 6px;
+}
