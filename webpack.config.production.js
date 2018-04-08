@@ -43,6 +43,12 @@ module.exports = {
     filename: '[name].js',
     path: path.resolve(__dirname, 'public'),
   },
+    resolve: {
+    alias: {
+      Table: path.resolve(__dirname, 'source/table'),
+      Info: path.resolve(__dirname, 'source/info')
+    },
+  },
   module: {
     rules: [
       {
